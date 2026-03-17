@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>密封圈缺陷检测结果</title>
+    <style>
+        body { font-family: "微软雅黑", sans-serif; text-align: center; margin-top: 50px; }
+        img { border: 1px solid #ccc; padding: 10px; max-width: 800px; max-height: 600px; }
+        a { display: inline-block; margin-top: 30px; padding: 10px 30px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>密封圈缺陷检测结果</h1>
+    <img src="{{ url_for('get_result_image', filename=image_filename) }}" alt="检测结果">
+    <br>
+    <a href="/">返回重新检测</a>
+</body>
+</html>

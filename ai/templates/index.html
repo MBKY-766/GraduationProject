@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>密封圈缺陷检测系统</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .upload-box {
+            border: 2px dashed #ccc;
+            padding: 50px;
+            margin-top: 30px;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O型密封圈缺陷检测系统</h1>
+    <div class="upload-box">
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".jpg,.jpeg,.png,.bmp" required>
+            <br>
+            <button type="submit">上传并检测</button>
+        </form>
+    </div>
+</body>
+</html>

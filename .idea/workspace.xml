@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7e4c3ce-bc14-4f11-aa3d-cd0ea5f40367" name="Changes" comment="前端+AI搭建">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/DetectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/FrontendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index--uy2AeEO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-B46Rnuxp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BCmKoO0Z.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BEigkFw5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BFtHrR9X.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BPNUUWVC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BZsx5mgI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BeE3-1bz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BuRd5d7S.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BwnDpF0j.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-C3cX-zK-.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-C9FhDjKu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CXaMejgA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-C_TcMSMe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CfeECS9R.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CpzQFh2P.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CrZVrp7U.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-Ctqkl3XO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CvDiWhGe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-D-uz1_AY.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-D5yLqYqC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-D9MxjTw5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DCP3DnfI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DCRnTcML.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DLnpUr_l.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DPHoS3w7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DSn4bDOx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DSxohHMk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DT9L6c9p.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DhEPyPwI.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-Di9X_hBd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DwYZkc_I.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DwaNOu0e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-PjKLwk_-.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-QCQ1DtBu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-VqW7uk2v.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-mnGL2Aqa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-sNsSK90C.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-uEuB0BxZ.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/vite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MBKY-766&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MBKY-766/GraduationProject.git&quot;,
+    &quot;accountId&quot;: &quot;35be5879-06a7-40b3-a0f5-3972a15c7e89&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+        <option name="userSettingsFile" value="D:\BaiduNetdiskDownload\apache-maven-3.9.4-bin\apache-maven-3.9.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="22" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3AYOsQMZgxV7OYaXWUoq0AZzMtM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.ai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ai_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.app-ai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app-backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_ai.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GraduationProjectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.backend.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IDEA_Project/GraduationProject/backend/src/main/resources/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;D:/Program Files/nodejs/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.frontend-dev.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\17837\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA_Project\GraduationProject\backend\src\main\resources\static" />
+      <recent name="D:\IDEA_Project\GraduationProject\frontend" />
+      <recent name="D:\IDEA_Project\GraduationProject\src\main\java\com\feng\graduationproject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA_Project\GraduationProject\ai" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.backend">
+    <configuration name="app-ai" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ai" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backend" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.feng.graduationproject.GraduationProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Python.app-ai" />
+      <item itemvalue="Spring Boot.backend" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app-ai" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7e4c3ce-bc14-4f11-aa3d-cd0ea5f40367" name="Changes" comment="" />
+      <created>1772766243878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772766243878</updated>
+      <workItem from="1772766246140" duration="978000" />
+      <workItem from="1772851114666" duration="6220000" />
+      <workItem from="1772969869886" duration="3278000" />
+      <workItem from="1773020222262" duration="3187000" />
+      <workItem from="1773023438824" duration="4410000" />
+      <workItem from="1773043753752" duration="11912000" />
+      <workItem from="1773109947025" duration="11990000" />
+      <workItem from="1773154673837" duration="882000" />
+      <workItem from="1773213507087" duration="3451000" />
+      <workItem from="1773278272426" duration="3164000" />
+      <workItem from="1773299150254" duration="346000" />
+      <workItem from="1773299728825" duration="596000" />
+      <workItem from="1773300643563" duration="1104000" />
+      <workItem from="1773318052432" duration="45000" />
+      <workItem from="1773369028704" duration="1739000" />
+      <workItem from="1773384849501" duration="2507000" />
+      <workItem from="1773450898718" duration="11927000" />
+      <workItem from="1773494066761" duration="1415000" />
+      <workItem from="1773579364846" duration="6427000" />
+      <workItem from="1773585957240" duration="1722000" />
+      <workItem from="1773642250470" duration="15407000" />
+      <workItem from="1773733954975" duration="304000" />
+      <workItem from="1773734966217" duration="4060000" />
+      <workItem from="1773739584057" duration="7345000" />
+      <workItem from="1773747934568" duration="1924000" />
+    </task>
+    <task id="LOCAL-00001" summary="前端+AI搭建">
+      <option name="closed" value="true" />
+      <created>1773580352454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773580352454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="前端+AI搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端+AI搭建" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GraduationProject$app_ai.coverage" NAME="app-ai Coverage Results" MODIFIED="1773748465450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/GraduationProject$app__1_.coverage" NAME="app-ai Coverage Results" MODIFIED="1773739412673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/GraduationProject$ai_api.coverage" NAME="ai_api Coverage Results" MODIFIED="1773645243103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/GraduationProject$app.coverage" NAME="app-backend Coverage Results" MODIFIED="1773737066275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/GraduationProject$test_ai.coverage" NAME="test_ai Coverage Results" MODIFIED="1773104568244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+  </component>
+</project>
