@@ -2,5 +2,7 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aa572abb-5d02-4ca0-9d70-b030102f4dd1/console.sql" value="aa572abb-5d02-4ca0-9d70-b030102f4dd1" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aa572abb-5d02-4ca0-9d70-b030102f4dd1/console_1.sql" value="aa572abb-5d02-4ca0-9d70-b030102f4dd1" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aa572abb-5d02-4ca0-9d70-b030102f4dd1/console_2.sql" value="aa572abb-5d02-4ca0-9d70-b030102f4dd1" />
   </component>
 </project>

@@ -10,28 +10,28 @@
         <div class="stat-item">
           <el-icon class="stat-icon"><Camera /></el-icon>
           <div class="stat-content">
-            <div class="stat-value">{{ totalTests }}</div>
+            <div class="stat-value">{{ overview.totalTests || 0 }}</div>
             <div class="stat-label">总检测次数</div>
           </div>
         </div>
         <div class="stat-item">
           <el-icon class="stat-icon"><Warning /></el-icon>
           <div class="stat-content">
-            <div class="stat-value">{{ totalDefects }}</div>
+            <div class="stat-value">{{ overview.totalDefects || 0 }}</div>
             <div class="stat-label">总缺陷数</div>
           </div>
         </div>
         <div class="stat-item">
           <el-icon class="stat-icon"><Check /></el-icon>
           <div class="stat-content">
-            <div class="stat-value">{{ passRate }}%</div>
+            <div class="stat-value">{{ overview.passRate ? overview.passRate.toFixed(1) : 0 }}%</div>
             <div class="stat-label">合格率</div>
           </div>
         </div>
         <div class="stat-item">
           <el-icon class="stat-icon"><Timer /></el-icon>
           <div class="stat-content">
-            <div class="stat-value">{{ avgTime }}s</div>
+            <div class="stat-value">{{ overview.avgTime || 0 }}s</div>
             <div class="stat-label">平均检测时间</div>
           </div>
         </div>
@@ -70,15 +70,32 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, reactive } from 'vue'
 import * as echarts from 'echarts'
 import { Camera, Warning, Check, Timer } from '@element-plus/icons-vue'
+import request from '@/utils/request'
 
 // 统计数据
-const totalTests = 120
-const totalDefects = 45
-const passRate = 62.5
-const avgTime = 2.3
+const overview = reactive({
+  totalTests: 0,
+  totalDefects: 0,
+  passRate: 0,
+  avgTime: 0
+})
+
+// 图表数据
+const defectTypeData = ref([])
+const detectionResultData = ref({
+  dates: [],
+  detectionCounts: [],
+  defectCounts: []
+})
+const detectionTrendData = ref({
+  months: [],
+  detectionCounts: [],
+  defectCounts: [],
+  passRates: []
+})
 
 // 图表引用
 const defectTypeChart = ref(null)
@@ -90,10 +107,74 @@ let defectTypeChartInstance = null
 let detectionResultChartInstance = null
 let detectionTrendChartInstance = null
 
+// 获取统计概览
+const getOverview = async () => {
+  try {
+    const res = await request({
+      url: '/statistics/overview',
+      method: 'get'
+    })
+    if (res.code === 200) {
+      Object.assign(overview, res.data)
+    }
+  } catch (err) {
+    console.error('获取统计概览失败:', err)
+  }
+}
+
+// 获取缺陷类型分布
+const getDefectTypeDistribution = async () => {
+  try {
+    const res = await request({
+      url: '/statistics/defect-type',
+      method: 'get'
+    })
+    if (res.code === 200) {
+      defectTypeData.value = res.data
+      initDefectTypeChart()
+    }
+  } catch (err) {
+    console.error('获取缺陷类型分布失败:', err)
+  }
+}
+
+// 获取检测结果统计
+const getDetectionResult = async () => {
+  try {
+    const res = await request({
+      url: '/statistics/detection-result',
+      method: 'get'
+    })
+    if (res.code === 200) {
+      detectionResultData.value = res.data
+      initDetectionResultChart()
+    }
+  } catch (err) {
+    console.error('获取检测结果统计失败:', err)
+  }
+}
+
+// 获取检测趋势
+const getDetectionTrend = async () => {
+  try {
+    const res = await request({
+      url: '/statistics/detection-trend',
+      method: 'get'
+    })
+    if (res.code === 200) {
+      detectionTrendData.value = res.data
+      initDetectionTrendChart()
+    }
+  } catch (err) {
+    console.error('获取检测趋势失败:', err)
+  }
+}
+
 // 初始化缺陷类型分布图表
 const initDefectTypeChart = () => {
   if (defectTypeChart.value) {
     defectTypeChartInstance = echarts.init(defectTypeChart.value)
+    const names = defectTypeData.value.map(item => item.name)
     const option = {
       tooltip: {
         trigger: 'item',
@@ -102,19 +183,14 @@ const initDefectTypeChart = () => {
       legend: {
         orient: 'vertical',
         left: 10,
-        data: ['裂纹', '切割缺陷', '挤压缺陷', '侧边压痕']
+        data: names
       },
       series: [
         {
           name: '缺陷类型',
           type: 'pie',
           radius: '50%',
-          data: [
-            { value: 15, name: '裂纹' },
-            { value: 10, name: '切割缺陷' },
-            { value: 8, name: '挤压缺陷' },
-            { value: 7, name: '侧边压痕' }
-          ],
+          data: defectTypeData.value,
           emphasis: {
             itemStyle: {
               shadowBlur: 10,
@@ -148,7 +224,7 @@ const initDetectionResultChart = () => {
       },
       xAxis: {
         type: 'category',
-        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        data: detectionResultData.value.dates
       },
       yAxis: {
         type: 'value'
@@ -157,12 +233,12 @@ const initDetectionResultChart = () => {
         {
           name: '检测次数',
           type: 'bar',
-          data: [12, 19, 15, 17, 20, 14, 18]
+          data: detectionResultData.value.detectionCounts
         },
         {
           name: '缺陷数量',
           type: 'bar',
-          data: [5, 8, 6, 7, 9, 5, 7]
+          data: detectionResultData.value.defectCounts
         }
       ]
     }
@@ -190,7 +266,7 @@ const initDetectionTrendChart = () => {
       xAxis: {
         type: 'category',
         boundaryGap: false,
-        data: ['1月', '2月', '3月', '4月', '5月', '6月']
+        data: detectionTrendData.value.months
       },
       yAxis: [
         {
@@ -213,18 +289,18 @@ const initDetectionTrendChart = () => {
         {
           name: '检测次数',
           type: 'line',
-          data: [60, 70, 80, 90, 100, 120]
+          data: detectionTrendData.value.detectionCounts
         },
         {
           name: '缺陷数量',
           type: 'line',
-          data: [25, 28, 30, 32, 35, 45]
+          data: detectionTrendData.value.defectCounts
         },
         {
           name: '合格率',
           type: 'line',
           yAxisIndex: 1,
-          data: [58.3, 60, 62.5, 64.4, 65, 62.5]
+          data: detectionTrendData.value.passRates
         }
       ]
     }
@@ -239,10 +315,14 @@ const handleResize = () => {
   detectionTrendChartInstance?.resize()
 }
 
-onMounted(() => {
-  initDefectTypeChart()
-  initDetectionResultChart()
-  initDetectionTrendChart()
+onMounted(async () => {
+  // 获取统计数据
+  await getOverview()
+  await getDefectTypeDistribution()
+  await getDetectionResult()
+  await getDetectionTrend()
+
+  // 监听窗口大小变化
   window.addEventListener('resize', handleResize)
 })
 </script>
@@ -333,12 +413,12 @@ onMounted(() => {
   .chart-container {
     grid-template-columns: 1fr;
   }
-  
+
   .stat-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .stat-item {
     width: 100%;
     max-width: none;

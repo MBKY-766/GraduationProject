@@ -968,38 +968,83 @@
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="305" parent="300" name="user">
+    <table id="305" parent="300" name="detection_record">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <column id="306" parent="305" name="id">
+    <table id="306" parent="300" name="user">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <column id="307" parent="305" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="308" parent="305" name="image_name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="309" parent="305" name="defect_count">
+      <DefaultExpression>0</DefaultExpression>
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="310" parent="305" name="defect_types">
+      <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="311" parent="305" name="detection_time">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
+    </column>
+    <column id="312" parent="305" name="status">
+      <DefaultExpression>1</DefaultExpression>
+      <Position>6</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <index id="313" parent="305" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="314" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="315" parent="306" name="id">
       <AutoIncrement>2</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="307" parent="305" name="username">
+    <column id="316" parent="306" name="username">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="308" parent="305" name="password">
+    <column id="317" parent="306" name="password">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="309" parent="305" name="status">
+    <column id="318" parent="306" name="status">
       <DefaultExpression>1</DefaultExpression>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <index id="310" parent="305" name="PRIMARY">
+    <index id="319" parent="306" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="311" parent="305" name="PRIMARY">
+    <key id="320" parent="306" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -1,6 +1,9 @@
 package com.feng.graduationproject.controller;
 
 import com.feng.graduationproject.common.Result;
+import com.feng.graduationproject.entity.DetectionRecord;
+import com.feng.graduationproject.mapper.DetectionRecordMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -12,7 +15,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
@@ -23,6 +29,9 @@ public class DetectionController {
     
     @Value("${ai.service.url:http://localhost:5000}")
     private String aiServiceUrl;
+    
+    @Autowired
+    private DetectionRecordMapper detectionRecordMapper;
     
     public DetectionController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
@@ -54,6 +63,35 @@ public class DetectionController {
             );
             
             Map<String, Object> responseData = response.getBody();
+            
+            // 插入检测记录到数据库
+            if (responseData != null && responseData.get("code").equals(200)) {
+                DetectionRecord record = new DetectionRecord();
+                record.setImageName(file.getOriginalFilename());
+                
+                // 解析缺陷数据
+                Map<String, Object> data = (Map<String, Object>) responseData.get("data");
+                if (data != null) {
+                    // 获取缺陷数量
+                    Integer defectCount = (Integer) data.get("defect_count");
+                    record.setDefectCount(defectCount != null ? defectCount : 0);
+                    
+                    // 获取缺陷类型
+                    List<Map<String, Object>> defects = (List<Map<String, Object>>) data.get("defects");
+                    if (defects != null && !defects.isEmpty()) {
+                        String defectTypes = defects.stream()
+                                .map(defect -> (String) defect.get("type"))
+                                .collect(Collectors.joining(","));
+                        record.setDefectTypes(defectTypes);
+                    }
+                }
+                
+                record.setDetectionTime(LocalDateTime.now());
+                record.setStatus(1); // 检测成功
+                
+                // 保存记录
+                detectionRecordMapper.insert(record);
+            }
             
             return Result.success(responseData);
         } catch (Exception e) {

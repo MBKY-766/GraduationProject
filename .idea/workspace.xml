@@ -5,66 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7e4c3ce-bc14-4f11-aa3d-cd0ea5f40367" name="Changes" comment="前端+AI搭建">
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-B3nEFNBO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BEUgSNOQ.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BReFgSe7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BUTtCML_.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-Br2lbmly.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CFEGpZza.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CpBcbz1-.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CxN5pD8W.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CxYPO3Ke.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-D-J8glyo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-D514LrTx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DJwW3H4Q.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DNalh2_z.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DSXOsr7t.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DZCwutHo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DfmwJ0YP.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-Dk_ATjTv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DrCywSvH.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-DwQPEJB7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-ImUTcquW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-Wtbd3j-S.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-fRhADz1l.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-fiO65ObT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-q4pWb7L6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-sPrKGjFY.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/StatisticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/entity/DetectionRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/mapper/DetectionRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/service/StatisticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-B03RlIPF.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BXmrHRmy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa572abb-5d02-4ca0-9d70-b030102f4dd1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa572abb-5d02-4ca0-9d70-b030102f4dd1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/ai_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/guid_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/result_f7dd15f4-ce38-4f0d-8571-5bfe196b3af0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/test_ai.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/results/result_db21f161-c0b8-4bf2-8d07-df59c6bbe97e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/runs/detect/train/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/GraduationProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/GraduationProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/DetectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/feng/graduationproject/controller/DetectionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/032ab190-8532-4c9e-b30d-392b815ed770.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/217f10f1-a032-4439-97ec-f4d1b604d89b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/2683ce8a-0861-4550-ad1d-65c6b62ecef0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/5bd92f0a-7462-45fd-bacd-0f060e55b738.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/6c6aa0b1-c188-43a8-8b39-240ffb2e4da2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/943193a1-f6fd-4cce-8c44-c996d062708a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/a1fd5b65-c777-4e46-ad58-c62e9b0e1958.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/a300748b-ea76-4fea-8bb1-75257a1c15bf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/b05dc62e-7293-43a6-aec7-c5168562a0b7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/c3c3930f-b2ed-4b83-a14b-1dfcd60c1a7f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/db21f161-c0b8-4bf2-8d07-df59c6bbe97e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/e3f5c695-2d28-4aa2-a936-ff42034f2d4e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yolov8s.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/DataAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/DataAnalysis.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid13680.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +101,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.GraduationProjectApplication.executor": "Run",
-    "Spring Boot.backend.executor": "Debug",
+    "Spring Boot.backend.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -172,6 +126,9 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA_Project\GraduationProject\backend\src\main\resources\static" />
@@ -182,7 +139,7 @@
       <recent name="D:\IDEA_Project\GraduationProject\ai" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.backend">
+  <component name="RunManager" selected="Python.app-ai">
     <configuration name="app-ai" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ai" />
       <option name="ENV_FILES" value="" />
@@ -264,7 +221,7 @@
       <workItem from="1773734966217" duration="4060000" />
       <workItem from="1773739584057" duration="7345000" />
       <workItem from="1773747934568" duration="3022000" />
-      <workItem from="1773798202211" duration="5394000" />
+      <workItem from="1773798202211" duration="7376000" />
     </task>
     <task id="LOCAL-00001" summary="前端+AI搭建">
       <option name="closed" value="true" />
@@ -304,7 +261,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GraduationProject$app_ai.coverage" NAME="app-ai Coverage Results" MODIFIED="1773798915614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/GraduationProject$app_ai.coverage" NAME="app-ai Coverage Results" MODIFIED="1773805577436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$app__1_.coverage" NAME="app-ai Coverage Results" MODIFIED="1773739412673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$ai_api.coverage" NAME="ai_api Coverage Results" MODIFIED="1773645243103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$app.coverage" NAME="app-backend Coverage Results" MODIFIED="1773737066275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />

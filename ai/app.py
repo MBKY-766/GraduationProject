@@ -16,10 +16,10 @@ os.makedirs(RESULT_FOLDER, exist_ok=True)
 model = YOLO("runs/detect/train1/weights/best.pt")
 # 在模型加载后添加
 class_map = {
-    1: "裂纹",
-    2: "切割缺陷",
-    3: "挤压缺陷",
-    4: "侧边压痕"
+    0: "裂纹",
+    1: "切割缺陷",
+    2: "挤压缺陷",
+    3: "侧边压痕"
 }
 @app.route("/", methods=["GET", "POST"])
 def index():
