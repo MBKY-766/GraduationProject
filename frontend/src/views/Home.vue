@@ -9,7 +9,7 @@
         text-color="#fff"
         active-text-color="#ffd04b"
       >
-        <el-menu-item index="1">
+        <el-menu-item index="1" @click="$router.push('/home')">
           <el-icon><House /></el-icon>
           <template #title>首页</template>
         </el-menu-item>
@@ -41,7 +41,6 @@
             </el-dropdown-menu>
           </template>
         </el-dropdown>
-        <span>管理员</span>
       </el-header>
       <el-main>
         <!-- 嵌套路由出口 -->
@@ -60,8 +59,8 @@ import { House, Camera, DataAnalysis, SwitchButton } from '@element-plus/icons-v
 const router = useRouter()
 
 const logout = () => {
-  // 修复1：移除重复路由跳转，仅保留一次replace（replace不会留下历史记录，更适合退出登录）
-  localStorage.removeItem('token')
+
+  sessionStorage.removeItem('token')
   ElMessage.success('退出成功')
   // 修复2：仅执行一次跳转，且无需setTimeout（避免延迟触发窗口激活）
   router.replace('/login')

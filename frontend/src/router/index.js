@@ -3,6 +3,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 // 导入页面组件
 import Login from '@/views/Login.vue'
 import Home from '@/views/Home.vue'
+import HomePage from '@/views/HomePage.vue'
 import Detection from '@/views/Detection.vue'
 import DataAnalysis from '@/views/DataAnalysis.vue'
 
@@ -22,6 +23,11 @@ const routes = [
     name: 'Home',
     component: Home,
     children: [
+      {
+        path: '',
+        name: 'HomePage',
+        component: HomePage
+      },
       {
         path: 'detection',
         name: 'Detection',
@@ -44,13 +50,13 @@ const router = createRouter({
 
 // 修复路由守卫逻辑，确保所有路径都有适当的处理
 router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem('token')
+  const token = sessionStorage.getItem('token')
   
   // 有token的情况
   if (token) {
     if (to.path === '/login') {
       // 已登录用户访问登录页，跳转到检测页
-      next({ path: '/home/detection' })
+      next({ path: '/home' })
     } else {
       // 正常访问其他页面
       next()
