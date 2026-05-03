@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e4c3ce-bc14-4f11-aa3d-cd0ea5f40367" name="Changes" comment="数据统计初步实现">
-      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e7e4c3ce-bc14-4f11-aa3d-cd0ea5f40367" name="Changes" comment="优化模型检测速度">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BCB9hlWL.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-BlVJPwRS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-CM8WpNgy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/static/assets/index-oLbg9ir0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -122,6 +126,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA_Project\GraduationProject\backend\src\main\resources\static" />
+      <recent name="D:\IDEA_Project\GraduationProject\frontend\dist" />
       <recent name="D:\IDEA_Project\GraduationProject\frontend" />
       <recent name="D:\IDEA_Project\GraduationProject\src\main\java\com\feng\graduationproject" />
     </key>
@@ -212,7 +217,15 @@
       <workItem from="1773739584057" duration="7345000" />
       <workItem from="1773747934568" duration="3022000" />
       <workItem from="1773798202211" duration="7570000" />
-      <workItem from="1775545828158" duration="2567000" />
+      <workItem from="1775545828158" duration="4598000" />
+      <workItem from="1775635089012" duration="1792000" />
+      <workItem from="1775721728562" duration="1530000" />
+      <workItem from="1777277164485" duration="1239000" />
+      <workItem from="1777345887929" duration="2546000" />
+      <workItem from="1777540048437" duration="680000" />
+      <workItem from="1777603455463" duration="1274000" />
+      <workItem from="1777694335080" duration="965000" />
+      <workItem from="1777794945707" duration="996000" />
     </task>
     <task id="LOCAL-00001" summary="前端+AI搭建">
       <option name="closed" value="true" />
@@ -230,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773805673131</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化模型检测速度">
+      <option name="closed" value="true" />
+      <created>1775548499868</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775548499868</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,14 +276,15 @@
     <MESSAGE value="前端+AI搭建" />
     <MESSAGE value="数据统计初步实现+全部功能基础实现" />
     <MESSAGE value="数据统计初步实现+全部功能基础实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据统计初步实现+全部功能基础实现" />
+    <MESSAGE value="优化模型检测速度" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化模型检测速度" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GraduationProject$app_ai.coverage" NAME="app-ai Coverage Results" MODIFIED="1775547907771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/GraduationProject$app_ai.coverage" NAME="app-ai Coverage Results" MODIFIED="1777540056530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$app__1_.coverage" NAME="app-ai Coverage Results" MODIFIED="1773739412673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$ai_api.coverage" NAME="ai_api Coverage Results" MODIFIED="1773645243103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
     <SUITE FILE_PATH="coverage/GraduationProject$app.coverage" NAME="app-backend Coverage Results" MODIFIED="1773737066275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
